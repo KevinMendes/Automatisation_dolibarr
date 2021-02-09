@@ -30,7 +30,7 @@ WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison 
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/tr_NomEnseigneRaison sociale'))
 
-WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Testing.bzh')
+WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Testong.bzh')
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 0)
 
@@ -39,6 +39,8 @@ WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_France (FR)_select2
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0)
+
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save'))
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save'))
 
