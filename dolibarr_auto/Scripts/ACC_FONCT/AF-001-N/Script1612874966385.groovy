@@ -15,7 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : GlobalVariable.Login, ('Password') : GlobalVariable.Password
+        , ('URL') : GlobalVariable.URL], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
