@@ -18,13 +18,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testing.bzh/dolibarr_Recette/')
+WebUI.navigateToUrl('http://localhost:3000/dolibarr/')
 
 WebUI.verifyElementPresent(findTestObject('Connexion/Page_Identifiant  1300/img_Dolibarr 1300_img_logo'), 0)
 
 WebUI.setText(findTestObject('Connexion/Page_Identifiant  1300/input_Dolibarr 1300_username'), 'admin')
 
-WebUI.setEncryptedText(findTestObject('Connexion/Page_Identifiant  1300/input_Dolibarr 1300_password'), 'NOZHw6sL/1I=')
+WebUI.setText(findTestObject('Connexion/Page_Identifiant  1300/input_Dolibarr 1300_password'), 'pass')
 
 WebUI.verifyElementPresent(findTestObject('Connexion/Page_Identifiant  1300/input_Dolibarr 1300_button'), 0)
 
