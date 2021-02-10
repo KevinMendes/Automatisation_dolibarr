@@ -4,6 +4,12 @@
    <name>input_Description_button</name>
    <tag></tag>
    <elementGuidId>4f0b6443-3d1e-476a-8063-d0749528e5c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'submit']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
