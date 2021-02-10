@@ -16,8 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
 
 WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Accueil - Dolibarr 1300/span_Projets'))
