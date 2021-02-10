@@ -16,14 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_admin'), 0)
+WebUI.click(findTestObject('Object Repository/T-001-A1/Page_Configuration/span_Tiers'))
 
-WebUI.click(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_admin'))
+WebUI.click(findTestObject('Object Repository/T-001-A1/Page_Tiers/a_Liste des clients'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_Dconnexion'), 0)
+WebUI.click(findTestObject('Object Repository/T-001-A1/Page_Tiers/a_APRIL'))
 
-WebUI.click(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_Dconnexion'))
+WebUI.click(findTestObject('Object Repository/T-001-A1/Page_APRIL - Fiche/span_Supprimer'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Identifiant  1300/input_Dolibarr 1300_button'), 
-    0)
+WebUI.click(findTestObject('Object Repository/T-001-A1/Page_APRIL - Fiche/button_Oui'))
 

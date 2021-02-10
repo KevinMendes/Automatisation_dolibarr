@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PS-002-A1</name>
+   <name>T-001-A1 - Suppression tiers</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f9408a39-5de8-446f-a206-b9b1e279ed9f</testCaseGuid>
+   <testCaseGuid>b67ded1f-2e68-4832-9732-e4878a0a9c94</testCaseGuid>
 </TestCaseEntity>

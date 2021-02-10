@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>SetUp_Suite</name>
+   <name>Reset_Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,53 +10,47 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>d0623e17-ca21-4928-b6c0-73a79ab60c52</testSuiteGuid>
+   <testSuiteGuid>b9ed654b-5bad-48f6-9ffa-3e0571f7f1ce</testSuiteGuid>
    <testCaseLink>
-      <guid>ff18fc71-495a-46b4-8370-2a4ced7ce2a1</guid>
+      <guid>5f13ec85-32a7-441a-b966-fdb6b194a03c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ACC_FONCT/AF-001-N</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5f423866-7861-40c9-8cae-b811b10eb697</guid>
+      <guid>8d44d1dc-14e8-4454-8c5d-29612abb5ed3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PROJET_SERVICE/PS-001-A1 - delete service</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>64d5b83a-50f4-4eb8-9c09-9c3f004635f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PROJET_SERVICE/PS-002-A1 - delete project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f313619c-11b8-4f1a-b4d3-63fdbc88b349</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ACC_FONCT/AF-003-N-RESET</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>07c5c709-7b73-4f90-9c92-0ff40921759b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ACC_FONCT/AF-004-N-RESET</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84288419-1d8d-401d-a040-7f5e70119875</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ACC_FONCT/AF-001-A1</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ecfff538-3462-4b8f-9110-2d782183859a</guid>
+      <guid>f2174fba-0b73-4a18-8ef2-e933ce51e6ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ACC_FONCT/AF-001-N</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>125bb44d-5464-48ca-82b1-875a4b608f6d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/ACC_FONCT/AF-004-N</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0bdcb9f4-38aa-403d-bff7-018a96e90e40</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/ACC_FONCT/AF-003-N</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>dc0ea0a1-7119-4673-8bf9-a4bc136be73a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PROJET_SERVICE/PS-002-N</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>46f0ee4c-ea42-4b68-8217-3189282499be</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PROJET_SERVICE/PS-001-N</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>546d1b12-1e85-4bfb-b5d1-0f0561d5cd57</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TIERS/T-001-N</testCaseId>
+      <testCaseId>Test Cases/Special/CloseBrowser</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PS-001-A1</name>
+   <name>PS-002-A1 - delete project</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f15f619b-1b69-4a2f-b544-babc71f21980</testCaseGuid>
+   <testCaseGuid>f9408a39-5de8-446f-a206-b9b1e279ed9f</testCaseGuid>
 </TestCaseEntity>

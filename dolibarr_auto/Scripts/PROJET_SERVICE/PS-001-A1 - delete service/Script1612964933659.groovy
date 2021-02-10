@@ -18,23 +18,31 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A1/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
+WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
 
-WebUI.click(findTestObject('Object Repository/PS-001-A1/Page_Accueil - Dolibarr 1300/span_Projets'))
+WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Accueil - Dolibarr 1300/span_Projets'))
 
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/projet/index.php?mainmenu=project&leftmenu=')
+WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/a_Liste'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A1/Page_Projets/a_Liste'), 0)
+WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Projets/a_Liste'))
 
-WebUI.click(findTestObject('Object Repository/PS-001-A1/Page_Projets/a_Liste'))
+WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/span_PJ2102-0001_fas fa-sitemap infobox-pro_024f19'), 
+    0)
 
-WebUI.click(findTestObject('Object Repository/PS-001-A1/Page_Projets/span_PJ2102-0001_fas fa-sitemap infobox-pro_024f19'))
+WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Projets/span_PJ2102-0001_fas fa-sitemap infobox-pro_024f19'))
 
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/projet/card.php?id=4&save_lastsearch_values=1')
+WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/a_Supprimer'), 0)
 
-WebUI.click(findTestObject('Page_PJ2102-0001 - Test cration projet/a_Supprimer'))
+WebUI.click(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/a_Supprimer'))
 
-WebUI.click(findTestObject('Page_PJ2102-0001 - Test cration projet/button_Oui'))
+WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/div_tes-vous sr de vouloir supprimer ce projet'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/button_Oui'), 0)
+
+WebUI.click(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/button_Oui'))
+
+WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/span_(0)'), 0)
 
 WebUI.closeBrowser()
 

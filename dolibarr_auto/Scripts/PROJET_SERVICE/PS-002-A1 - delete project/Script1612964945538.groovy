@@ -33,16 +33,15 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A1/Page_Prod
 
 WebUI.click(findTestObject('Object Repository/PS-002-A1/Page_Produits et Services/span_ref_fas fa-concierge-bell paddingright_c95ed5'))
 
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/product/card.php?id=3&save_lastsearch_values=1')
+WebUI.waitForElementVisible(findTestObject('PS-002-A1/Page_Service lib - Fiche/span_Supprimer'), 5)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/PS-002-A1/Page_Service lib - Fiche/span_Supprimer'), 0)
+WebUI.click(findTestObject('PS-002-A1/Page_Service lib - Fiche/span_Supprimer'))
 
-WebUI.click(findTestObject('Object Repository/PS-002-A1/Page_Service lib - Fiche/span_Supprimer'))
+WebUI.verifyElementPresent(findTestObject('PS-002-A1/Page_Service lib - Fiche/span_Supprimer un produitservice'), 0)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/PS-002-A1/Page_Service lib - Fiche/span_Supprimer un produitservice'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('PS-002-A1/Page_Service lib - Fiche/button_Oui'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A1/Page_Service lib - Fiche/button_Oui'), 0)
+WebUI.click(findTestObject('PS-002-A1/Page_Service lib - Fiche/button_Oui'))
 
-WebUI.click(findTestObject('Object Repository/PS-002-A1/Page_Service lib - Fiche/button_Oui'))
+WebUI.navigateToUrl('http://localhost:3000/dolibarr/product/list.php?type=1&delprod=ref')
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-customerprospect-result-k12d-2&quot;]</value>
+         <value>//*[@id=&quot;select2-customerprospect-result-a0sb-3&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

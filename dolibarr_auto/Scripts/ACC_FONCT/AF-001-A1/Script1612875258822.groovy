@@ -17,5 +17,3 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Special/Connexion'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Special/Deconnexion'), [:], FailureHandling.STOP_ON_FAILURE)
-

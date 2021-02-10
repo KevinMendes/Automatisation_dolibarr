@@ -14,16 +14,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_admin'), 0)
-
-WebUI.click(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_admin'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_Dconnexion'), 0)
-
-WebUI.click(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_Dconnexion'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Identifiant  1300/input_Dolibarr 1300_button'), 
-    0)
+WebUI.closeBrowser()
 
