@@ -16,23 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/T-004-N/Page_Accueil - Dolibarr 1300/span_Tiers'), 0)
 
-WebUI.click(findTestObject('Object Repository/T-001-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
+WebUI.click(findTestObject('Object Repository/T-004-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
 
-WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/a_Nouveau tiers'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/T-004-N/Page_Tiers/a_Liste'), 0)
 
-WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Nouveau tiers (prospect client fournisseur)'), 0)
+WebUI.click(findTestObject('Object Repository/T-004-N/Page_Tiers/a_Liste'))
 
-WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), 'April')
-
-WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
-
-WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), 'Client')
-
-WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Logo_create'))
-
-WebUI.verifyElementPresent(findTestObject('T-001-N/Page_April/div_April Etats-Unis'), 0)
+WebUI.verifyTextPresent('April', false)
 

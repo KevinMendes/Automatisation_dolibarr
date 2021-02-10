@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Suppression du Tiers</description>
+   <name>T-001-A1 - Suppression de tier</name>
+   <tag>T-001-A1</tag>
+   <comment></comment>
+   <testCaseGuid>a6d5b656-2d80-4b12-89c7-6a64d9a6cd36</testCaseGuid>
+</TestCaseEntity>
