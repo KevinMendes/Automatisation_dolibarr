@@ -16,23 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/T-004-N/Page_Accueil - Dolibarr 1300/span_Tiers'), 0)
 
-WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_Accueil - Dolibarr 1300/span_Tiers'), 0)
+WebUI.click(findTestObject('Object Repository/T-004-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
 
-WebUI.click(findTestObject('T-001-A1/Page_Accueil - Dolibarr 1300/span_Tiers'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/T-004-N/Page_Tiers/a_Liste'), 0)
 
-WebUI.verifyTextPresent('PremierTiers', false)
+WebUI.click(findTestObject('Object Repository/T-004-N/Page_Tiers/a_Liste'))
 
-WebUI.click(findTestObject('T-001-A1/Page_Tiers/a_PremierTiers'))
-
-WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_PremierTiers - Fiche/span_Supprimer'), 0)
-
-WebUI.click(findTestObject('T-001-A1/Page_PremierTiers - Fiche/span_Supprimer'))
-
-WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_PremierTiers - Fiche/button_Oui'), 0)
-
-WebUI.click(findTestObject('T-001-A1/Page_PremierTiers - Fiche/button_Oui'))
-
-WebUI.verifyTextNotPresent('PremierTiers', false)
+WebUI.verifyTextPresent('April', false)
 

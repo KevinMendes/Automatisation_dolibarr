@@ -16,17 +16,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+<<<<<<< HEAD
+WebUI.comment('Selection Onglet Service')
 
+=======
+>>>>>>> d4f891b3641c1fdf1b7ca02049052952b1dc4317
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Accueil - Dolibarr 1300/span_Services'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-002-N/Page_Accueil - Dolibarr 1300/span_Services'))
 
 WebUI.navigateToUrl('http://localhost:3000/dolibarr/product/index.php?mainmenu=products&leftmenu=')
 
+WebUI.comment('Selection nouveau service')
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Produits et Services/a_Nouveau service'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-002-N/Page_Produits et Services/a_Nouveau service'))
+
+WebUI.comment('Ajout data Ref, Lib, Durée et Prix ainsi que les selections  Vente Achat Durée HTTTC')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Service - Fiche/input_Rf_ref'), 0)
 
@@ -79,6 +86,8 @@ WebUI.getText(findTestObject('Object Repository/PS-002-N/Page_Service - Fiche/in
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Service - Fiche/select_HTTTC'), 0)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/PS-002-N/Page_Service - Fiche/select_HTTTC'), 'HT', true)
+
+WebUI.comment('Validation bouton créer et vérification')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Service - Fiche/input_Code comptable (achat import)_button'), 
     0)

@@ -16,15 +16,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.comment('Selection Onglet Projet')
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'))
 
 WebUI.navigateToUrl('http://localhost:3000/dolibarr/projet/index.php?mainmenu=project&leftmenu=')
 
+WebUI.comment('Selection créer nouveau service')
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-N/Page_Projets/a_Nouvelle opp ou projet'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-001-N/Page_Projets/a_Nouvelle opp ou projet'))
+
+WebUI.comment('Ajout Nom, DateFin ')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-N/Page_Dolibarr/input_Libell projet_title'), 0)
 
@@ -42,9 +48,13 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-N/Page_Dolib
 
 WebUI.click(findTestObject('Object Repository/PS-001-N/Page_Dolibarr/input_Description_button'))
 
+WebUI.comment('Validation')
+
 WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_PJ2102-0001 - Test cration projet/a_Valider'), 0)
 
 WebUI.click(findTestObject('PS-001-N/Page_PJ2102-0001 - Test cration projet/a_Valider'))
+
+WebUI.comment('vérification, apparition pop-up et validation')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/PS-001-N/Page_PJ2102-0001 - Test cration projet/span_Valider projet'), 
     5)

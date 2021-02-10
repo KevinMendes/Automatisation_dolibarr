@@ -18,31 +18,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
+WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_Accueil - Dolibarr 1300/span_Tiers'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Accueil - Dolibarr 1300/span_Projets'))
+WebUI.click(findTestObject('T-001-A1/Page_Accueil - Dolibarr 1300/span_Tiers'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/a_Liste'), 0)
+WebUI.verifyTextPresent('April', false, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Projets/a_Liste'))
+WebUI.click(findTestObject('T-001-A1/Page_Tiers/a_APRIL'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/span_PJ2102-0001_fas fa-sitemap infobox-pro_024f19'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_APRIL - Fiche/span_Supprimer'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Projets/span_PJ2102-0001_fas fa-sitemap infobox-pro_024f19'))
+WebUI.click(findTestObject('T-001-A1/Page_APRIL - Fiche/span_Supprimer'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/a_Supprimer'), 0)
+WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_APRIL - Fiche/button_Oui'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/a_Supprimer'))
+WebUI.click(findTestObject('T-001-A1/Page_APRIL - Fiche/button_Oui'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/div_tes-vous sr de vouloir supprimer ce projet'), 
-    0)
-
-WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/button_Oui'), 0)
-
-WebUI.click(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/button_Oui'))
-
-WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/span_(0)'), 0)
-
-WebUI.closeBrowser()
+WebUI.verifyTextNotPresent('April', false, FailureHandling.OPTIONAL)
 

@@ -16,31 +16,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0)
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 0)
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0)
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), 0)
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), 0)
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), 0)
-
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), FailureHandling.OPTIONAL)
 
