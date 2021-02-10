@@ -14,7 +14,7 @@
          <value>//*[@href = 'card.php?id=4&amp;action=delete&amp;token=$2y$10$2EzEvIPO2RDNSLR5TOuU7ulHKBjUNgb17MCw22yFyL8PaB7P5A2v2' and (text() = 'Supprimer' or . = 'Supprimer')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
