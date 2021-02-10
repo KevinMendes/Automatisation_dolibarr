@@ -4,7 +4,17 @@
    <name>span_Supprimer un produitservice</name>
    <tag></tag>
    <elementGuidId>0dcb7459-52c5-4b84-87ef-7dd389748bef</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='ui-id-1']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ui-id-1' and (text() = 'Supprimer un produit/service' or . = 'Supprimer un produit/service')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

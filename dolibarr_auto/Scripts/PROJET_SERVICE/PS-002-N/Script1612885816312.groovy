@@ -87,5 +87,3 @@ WebUI.click(findTestObject('Object Repository/PS-002-N/Page_Service - Fiche/inpu
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Service lib - Fiche/a_Service'), 0)
 
-WebUI.click(findTestObject('Object Repository/PS-002-N/Page_Service lib - Fiche/a_Service'))
-
