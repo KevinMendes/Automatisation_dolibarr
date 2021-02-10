@@ -50,3 +50,5 @@ WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save')
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 0)
 
+WebUI.closeBrowser()
+

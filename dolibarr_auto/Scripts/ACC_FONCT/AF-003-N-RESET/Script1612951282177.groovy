@@ -42,3 +42,5 @@ WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gest
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'))
 
+WebUI.closeBrowser()
+
