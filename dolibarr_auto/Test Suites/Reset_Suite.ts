@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>b9ed654b-5bad-48f6-9ffa-3e0571f7f1ce</testSuiteGuid>
    <testCaseLink>
-      <guid>5f13ec85-32a7-441a-b966-fdb6b194a03c</guid>
+      <guid>6429ca33-fde2-4b71-880e-34a61f4b4804</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ACC_FONCT/AF-001-N</testCaseId>
@@ -30,16 +30,16 @@
       <testCaseId>Test Cases/PROJET_SERVICE/PS-002-A1 - delete service</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f313619c-11b8-4f1a-b4d3-63fdbc88b349</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/ACC_FONCT/AF-003-N-RESET</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>07c5c709-7b73-4f90-9c92-0ff40921759b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ACC_FONCT/AF-004-N-RESET</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f313619c-11b8-4f1a-b4d3-63fdbc88b349</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ACC_FONCT/AF-003-N-RESET</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>84288419-1d8d-401d-a040-7f5e70119875</guid>
