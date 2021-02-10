@@ -14,6 +14,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('T-001-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
+
+WebUI.click(findTestObject('T-001-N/Page_Tiers/a_Nouveau tiers'))
+
+WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Nom du tiers_name'), 'PremierTiers')
+
+WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
+
+WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), 'Prospect')
+
+WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('T-001-N/Page_Tiers/input_Logo_create'))
 
