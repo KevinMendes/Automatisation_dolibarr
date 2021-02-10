@@ -16,6 +16,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), 0)
+
+WebUI.click(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'))
+
 WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), FailureHandling.OPTIONAL)
@@ -24,19 +28,7 @@ WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Modules
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0, FailureHandling.OPTIONAL)
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), FailureHandling.OPTIONAL)
-
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), 0, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), FailureHandling.OPTIONAL)
-
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), 0, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), FailureHandling.OPTIONAL)
-
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), 0, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), FailureHandling.OPTIONAL)
 

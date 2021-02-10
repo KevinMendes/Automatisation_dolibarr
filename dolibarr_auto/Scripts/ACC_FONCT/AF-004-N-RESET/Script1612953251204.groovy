@@ -16,6 +16,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), 0)
+
+WebUI.click(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'))
+
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), 0, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), FailureHandling.OPTIONAL)
