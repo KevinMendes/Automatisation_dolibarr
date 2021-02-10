@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Liste des clients</description>
+   <name>T-004-N</name>
+   <tag>T-004-N</tag>
+   <comment></comment>
+   <testCaseGuid>f5aa243f-be9f-49b6-9cc8-330736df1cd6</testCaseGuid>
+</TestCaseEntity>
