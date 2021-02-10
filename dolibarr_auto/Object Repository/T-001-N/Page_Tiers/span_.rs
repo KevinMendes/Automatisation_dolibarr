@@ -6,12 +6,12 @@
    <elementGuidId>9ca896ba-1378-49f8-bf2d-dbd9b4291337</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'select2-customerprospect-container' and @title = ' ' and (text() = ' ' or . = ' ')]</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;select2-customerprospect-container&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[3]/div[2]/div/form/div[1]/table/tbody/tr[3]/td[2]/span/span[1]/span/span[2]</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'select2-customerprospect-container' and @title = ' ' and (text() = ' ' or . = ' ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
