@@ -16,17 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/')
-
-WebUI.setText(findTestObject('Object Repository/PS-001-A1-HELENE/Page_Identifiant  1300/input_Dolibarr 1300_username'), 
-    'admin')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/PS-001-A1-HELENE/Page_Identifiant  1300/input_Dolibarr 1300_password'), 
-    'NOZHw6sL/1I=')
-
-WebUI.click(findTestObject('Object Repository/PS-001-A1-HELENE/Page_Identifiant  1300/input_Dolibarr 1300_button'))
+WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
 
@@ -53,4 +43,6 @@ WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - T
 WebUI.click(findTestObject('PS-001-A1-HELENE/Page_PJ2102-0001 - Test cration projet/button_Oui'))
 
 WebUI.verifyElementPresent(findTestObject('PS-001-A1-HELENE/Page_Projets/span_(0)'), 0)
+
+WebUI.closeBrowser()
 
