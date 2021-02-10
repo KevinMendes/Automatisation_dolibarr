@@ -22,6 +22,8 @@ WebUI.click(findTestObject('Object Repository/T-001-N/Page_Accueil - Dolibarr 13
 
 WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/a_Nouveau tiers'))
 
+WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Nouveau tiers (prospect client fournisseur)'), 0)
+
 WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), 'April')
 
 WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
@@ -31,4 +33,6 @@ WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__fiel
 WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Logo_create'))
+
+WebUI.verifyElementPresent(findTestObject('T-001-N/Page_April/div_April Etats-Unis'), 0)
 
