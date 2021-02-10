@@ -18,5 +18,3 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : GlobalVariable.Login, ('Password') : GlobalVariable.Password
         , ('URL') : GlobalVariable.URL], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
-

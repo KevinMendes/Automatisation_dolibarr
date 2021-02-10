@@ -27,5 +27,3 @@ WebUI.click(findTestObject('Object Repository/Deconnexion/Page_Configuration/a_D
 WebUI.verifyElementPresent(findTestObject('Object Repository/Deconnexion/Page_Identifiant  1300/input_Dolibarr 1300_button'), 
     0)
 
-WebUI.closeBrowser()
-
