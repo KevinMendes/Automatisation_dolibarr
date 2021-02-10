@@ -49,5 +49,5 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Serv
 
 WebUI.click(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/input_Code comptable (achat import)_button _8dbbd4'))
 
-WebUI.rightClick(findTestObject('Object Repository/PS-002-A2/Page_Service libmodif - Fiche/a_Service'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Service libmodif - Fiche/a_Service'), 0)
 
