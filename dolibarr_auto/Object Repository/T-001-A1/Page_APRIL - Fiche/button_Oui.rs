@@ -10,11 +10,15 @@
          <value>(//button[@type='button'])[2]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = 'Oui' or . = 'Oui')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

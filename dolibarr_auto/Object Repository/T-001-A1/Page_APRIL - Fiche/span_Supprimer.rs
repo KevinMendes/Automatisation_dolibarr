@@ -10,11 +10,15 @@
          <value>//span[@id='action-delete']</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'action-delete' and (text() = 'Supprimer' or . = 'Supprimer')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#action-delete</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
