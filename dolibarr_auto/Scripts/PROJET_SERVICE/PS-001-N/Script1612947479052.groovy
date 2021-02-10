@@ -44,5 +44,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-N/Page_Dolib
 
 WebUI.click(findTestObject('Object Repository/PS-001-N/Page_Dolibarr/input_Description_button'))
 
-WebUI.rightClick(findTestObject('Object Repository/PS-001-N/Page_PJ2102-0001 - Test cration projet/a_Projet'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-N/Page_PJ2102-0001 - Test cration projet/a_Projet'), 
+    0)
 
