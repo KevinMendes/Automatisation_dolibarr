@@ -16,10 +16,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+<<<<<<< HEAD:dolibarr_auto/Scripts/PROJET_SERVICE/PS-002-A1 - delete project/Script1612964945538.groovy
+WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A1/Page_Accueil - Dolibarr 1300/span_Services'), 0)
+=======
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A1/Page_Accueil - Dolibarr 1300/span_Services'), 0, 
     FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/PS-002-A1/Page_Accueil - Dolibarr 1300/span_Services'), FailureHandling.OPTIONAL)
+>>>>>>> d4f891b3641c1fdf1b7ca02049052952b1dc4317:dolibarr_auto/Scripts/PROJET_SERVICE/PS-002-A1 - delete service/Script1612965179134.groovy
 
 WebUI.navigateToUrl('http://localhost:3000/dolibarr/product/index.php?mainmenu=products&leftmenu=', FailureHandling.OPTIONAL)
 

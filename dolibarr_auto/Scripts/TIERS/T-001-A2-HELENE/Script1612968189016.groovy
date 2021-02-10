@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Object Repository/T-001-A2-HELENE/Page_April - Fiche
 WebUI.verifyElementPresent(findTestObject('Object Repository/T-001-A2-HELENE/Page_April - Fiche/input_Nom du tiers_name'), 
     0)
 
-WebUI.setText(findTestObject('Object Repository/T-001-A2-HELENE/Page_April - Fiche/input_Nom du tiers_name'), 'Aprol')
+WebUI.setText(findTestObject('Object Repository/T-001-A2-HELENE/Page_April - Fiche/input_Nom du tiers_name'), 'April')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/T-001-A2-HELENE/Page_April - Fiche/input_Affecter un commercial_save'), 
     0)

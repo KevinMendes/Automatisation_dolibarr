@@ -16,11 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.comment('Selection Onglet Service')
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Accueil - Dolibarr 1300/span_Services'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-002-A2/Page_Accueil - Dolibarr 1300/span_Services'))
 
 WebUI.navigateToUrl('http://localhost:3000/dolibarr/product/index.php?mainmenu=products&leftmenu=')
+
+WebUI.comment('Choisir liste ensuite le service à modifier puis modifier')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Produits et Services/a_Liste'), 0)
 
@@ -34,6 +40,8 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Serv
 
 WebUI.click(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/a_Modifier'))
 
+WebUI.comment('Modification du libellé')
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/input_Libell_label'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/input_Libell_label'))
@@ -41,6 +49,8 @@ WebUI.click(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche
 WebUI.setText(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/input_Libell_label'), 'libmodif')
 
 WebUI.getText(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/input_Libell_label'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.comment('validation puis vérification')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-A2/Page_Service lib - Fiche/input_Code comptable (achat import)_button _8dbbd4'), 
     0)
