@@ -21,13 +21,13 @@
       <guid>8d44d1dc-14e8-4454-8c5d-29612abb5ed3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PROJET_SERVICE/PS-001-A1 - delete service</testCaseId>
+      <testCaseId>Test Cases/PROJET_SERVICE/PS-001-A1 - delete project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>64d5b83a-50f4-4eb8-9c09-9c3f004635f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PROJET_SERVICE/PS-002-A1 - delete project</testCaseId>
+      <testCaseId>Test Cases/PROJET_SERVICE/PS-002-A1 - delete service</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f313619c-11b8-4f1a-b4d3-63fdbc88b349</guid>
