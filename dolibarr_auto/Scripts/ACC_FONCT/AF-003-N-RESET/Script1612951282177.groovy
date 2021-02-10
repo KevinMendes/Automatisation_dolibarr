@@ -18,17 +18,29 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('T-001-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0)
 
-WebUI.click(findTestObject('T-001-N/Page_Tiers/a_Nouveau tiers'))
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'))
 
-WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Nom du tiers_name'), 'PremierTiers')
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 0)
 
-WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'))
 
-WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), 'Prospect')
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0)
 
-WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'))
 
-WebUI.click(findTestObject('T-001-N/Page_Tiers/input_Logo_create'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), 0)
+
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'))
+
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), 0)
+
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'))
+
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), 0)
+
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'))
+
+WebUI.closeBrowser()
 

@@ -30,17 +30,17 @@ WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison 
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/tr_NomEnseigneRaison sociale'))
 
-WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Testing.bzh')
-
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 0)
-
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/span_(FR)'), 0)
-
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_(FR)'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Renseignez votre société')
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 0)
+
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/span_(US)'), 0)
+
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_(US)'))
+
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0)
 
@@ -49,4 +49,6 @@ WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/input_Descript
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save'))
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 0)
+
+WebUI.closeBrowser()
 
