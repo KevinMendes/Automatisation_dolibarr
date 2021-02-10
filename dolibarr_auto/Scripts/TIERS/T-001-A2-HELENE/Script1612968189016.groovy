@@ -49,3 +49,5 @@ WebUI.click(findTestObject('Object Repository/T-001-A2-HELENE/Page_April - Fiche
 WebUI.verifyElementPresent(findTestObject('Object Repository/T-001-A2-HELENE/Page_Aprol - Fiche/div_Aprol Etats-Unis'), 
     0)
 
+WebUI.closeBrowser()
+
