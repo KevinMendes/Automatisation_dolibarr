@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Object Repository/T-001-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
 
-WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Tiers  Contacts'), 5)
+WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Tiers Contacts'), 5)
 
 WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/a_Nouveau tiers'))
 
@@ -27,16 +27,15 @@ WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Nouveau tiers 
 WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/input_Logo_create'), 5)
 
 'nom du tiers'
-WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), 'April')
+WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), nomTiers)
 
 WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
 
-'client ou prospect'
-WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), 'Client')
+WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), clientProspect)
 
 WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Logo_create'))
 
-WebUI.verifyElementPresent(findTestObject('T-001-N/Page_April/td_Prospect  Client'), 5)
+WebUI.verifyElementPresent(findTestObject('T-001-N/Page_April/td_Prospect Client'), 5)
 
