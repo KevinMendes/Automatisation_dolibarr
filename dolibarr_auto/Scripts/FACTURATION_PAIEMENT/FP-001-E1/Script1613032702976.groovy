@@ -16,9 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass', ('URL') : 'http://localhost:3000/dolibarr\n'], 
-    FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementPresent(findTestObject('Page_Accueil - Dolibarr 1300/span_Facturation  Paiement'), 0)
 
 WebUI.click(findTestObject('Object Repository/FP-001-E1/Page_Accueil - Dolibarr 1300/span_Facturation  Paiement'))

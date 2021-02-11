@@ -16,18 +16,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TIERS/T-001-N</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>73d4b005-bb7f-42a7-9d73-58ed8d3b271d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>62827794-59ad-4cb6-84e9-18bd02f2f90e</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>c32883ef-9814-4689-a7d0-bba25f78e2fe</guid>

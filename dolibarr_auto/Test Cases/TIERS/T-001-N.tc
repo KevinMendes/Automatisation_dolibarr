@@ -5,18 +5,4 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>32703cd5-b9d6-4e54-995b-c251068344ee</testCaseGuid>
-   <variable>
-      <defaultValue>'April'</defaultValue>
-      <description></description>
-      <id>73d4b005-bb7f-42a7-9d73-58ed8d3b271d</id>
-      <masked>false</masked>
-      <name>nomTiers</name>
-   </variable>
-   <variable>
-      <defaultValue>'Client'</defaultValue>
-      <description></description>
-      <id>62827794-59ad-4cb6-84e9-18bd02f2f90e</id>
-      <masked>false</masked>
-      <name>clientProspect</name>
-   </variable>
 </TestCaseEntity>
