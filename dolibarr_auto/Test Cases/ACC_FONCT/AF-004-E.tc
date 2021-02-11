@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Création société</description>
-   <name>AF-004-N-RESET</name>
+   <name>AF-004-E</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9eb3d0db-4e9c-45c8-a012-b7ab818f9eee</testCaseGuid>
+   <testCaseGuid>f72b0421-4b83-4644-a68c-f59d3b5feae6</testCaseGuid>
    <variable>
-      <defaultValue>'Renseignez votre société'</defaultValue>
+      <defaultValue>'Testing.bzh'</defaultValue>
       <description></description>
-      <id>720fa196-d9e7-4bf4-8fd3-d3ebc62336ba</id>
+      <id>3cd8640b-43d5-4d3f-b4c6-514926001ff2</id>
       <masked>false</masked>
-      <name>nomEnseigneDefaut</name>
+      <name>nomEnseigne</name>
    </variable>
 </TestCaseEntity>

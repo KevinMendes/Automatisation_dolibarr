@@ -32,3 +32,11 @@ WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gest
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), FailureHandling.OPTIONAL)
 
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), 1)
+
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), FailureHandling.OPTIONAL)
+
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), 1)
+
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), FailureHandling.OPTIONAL)
+

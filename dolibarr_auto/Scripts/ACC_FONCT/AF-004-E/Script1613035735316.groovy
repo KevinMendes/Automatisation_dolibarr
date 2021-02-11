@@ -16,11 +16,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), 0)
+WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass', ('URL') : 'http://localhost:3000/dolibarr\n'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), 1)
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_Configuration'))
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'), 1)
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'))
 
@@ -28,23 +31,26 @@ WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison 
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/tr_NomEnseigneRaison sociale'))
 
-WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), nomEnseigne)
+WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), "")
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 1)
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/span_(FR)'), 0)
+WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/span_(FR)'), 1)
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_(FR)'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 1)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 1)
 
-WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0)
+WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 1)
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save'))
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 0)
+WebUI.comment('présence d\'un triangle jaune')
+
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_SocitOrganisation_fas fa-exclamation-triangle pictowarning pictowarning'), 
+    1)
 
