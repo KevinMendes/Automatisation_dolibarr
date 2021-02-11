@@ -4,6 +4,12 @@
    <name>span_Prospect  Client</name>
    <tag></tag>
    <elementGuidId>16b08ada-0a89-4c18-a5af-035b8262fc57</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'select2-customerprospect-container' and @title = 'Prospect / Client' and (text() = 'Prospect / Client' or . = 'Prospect / Client')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

@@ -14,4 +14,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass', ('URL') : 'http://localhost:3000/dolibarr\n'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/T-001-N/Page_Accueil - Dolibarr 1300/span_Tiers'))
+
+WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/a_Nouveau tiers'))
+
+WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), 'April')
+
+WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Logo_create'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/T-001-N/Page_Tiers/div_Le champ Prospect  Client est obligatoire'), 
+    5)
 

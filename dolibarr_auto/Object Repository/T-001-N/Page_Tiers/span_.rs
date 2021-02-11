@@ -14,7 +14,7 @@
          <value>//*[@id = 'select2-customerprospect-container' and @title = ' ' and (text() = ' ' or . = ' ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

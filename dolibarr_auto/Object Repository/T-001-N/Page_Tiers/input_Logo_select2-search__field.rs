@@ -98,7 +98,7 @@
       <matchCondition>equals</matchCondition>
       <name>aria-activedescendant</name>
       <type>Main</type>
-      <value>select2-customerprospect-result-kpkn-2</value>
+      <value>select2-customerprospect-result-8esq-3</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
