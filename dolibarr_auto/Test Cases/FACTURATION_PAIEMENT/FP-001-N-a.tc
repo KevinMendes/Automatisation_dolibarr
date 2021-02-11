@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Création compte bancaire</description>
+   <name>FP-001-N-a</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbf5e327-505c-48ea-9172-538d74663e84</testCaseGuid>
+</TestCaseEntity>

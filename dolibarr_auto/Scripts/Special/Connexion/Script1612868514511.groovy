@@ -20,7 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.verifyElementPresent(findTestObject('Connexion/Page_Identifiant  1300/img_Dolibarr 1300_img_logo'), 0)
 
