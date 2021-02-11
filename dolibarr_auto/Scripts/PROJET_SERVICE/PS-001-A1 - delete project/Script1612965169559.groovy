@@ -16,13 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-<<<<<<< HEAD:dolibarr_auto/Scripts/PROJET_SERVICE/PS-001-A1 - delete service/Script1612964933659.groovy
-WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
-=======
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementPresent(findTestObject('PS-001-N/Page_Accueil - Dolibarr 1300/span_Projets'), 1, FailureHandling.OPTIONAL)
->>>>>>> d4f891b3641c1fdf1b7ca02049052952b1dc4317:dolibarr_auto/Scripts/PROJET_SERVICE/PS-001-A1 - delete project/Script1612965169559.groovy
 
 WebUI.click(findTestObject('PS-001-A1-HELENE/Page_Accueil - Dolibarr 1300/span_Projets'), FailureHandling.OPTIONAL)
 

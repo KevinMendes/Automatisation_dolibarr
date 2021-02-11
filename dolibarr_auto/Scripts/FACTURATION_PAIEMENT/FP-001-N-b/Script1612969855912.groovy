@@ -16,8 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('FACTURATION_PAIEMENT/FP-001-N-a'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('Object Repository/FP-001-N-b/Page_Facture client - Fiche/input_Services prdfinis en vente_prod_entry_mode'))
 
 WebUI.click(findTestObject('FP-001-N-b/Page_Facture client - Fiche/span_Services prdfinis en vente_select2-selection__arrow'))
