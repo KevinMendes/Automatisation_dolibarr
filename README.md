@@ -1,1 +1,0 @@
-# Automatisation_dolibarr
