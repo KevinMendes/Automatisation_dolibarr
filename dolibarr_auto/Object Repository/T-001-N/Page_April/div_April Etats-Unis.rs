@@ -4,6 +4,14 @@
    <name>div_April Etats-Unis</name>
    <tag></tag>
    <elementGuidId>0406d0ee-0290-4443-8c37-d9c3a4084d50</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'April Etats-Unis
+' or . = 'April Etats-Unis
+')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,8 +33,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>April
- Etats-Unis
+      <value>April Etats-Unis
 </value>
    </webElementProperties>
    <webElementProperties>
