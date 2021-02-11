@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[@title = 'Configuration' and @href = '/dolibarr/admin/index.php?mainmenu=home&amp;leftmenu=setup' and (text() = 'Configuration' or . = 'Configuration')]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;id-left&quot;]/div/div[3]/div[4]/a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
