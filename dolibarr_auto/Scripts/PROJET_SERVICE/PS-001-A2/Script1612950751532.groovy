@@ -18,11 +18,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.comment('Selection Onglet Projet')
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A2/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
 
 WebUI.click(findTestObject('Object Repository/PS-001-A2/Page_Accueil - Dolibarr 1300/span_Projets'))
 
 WebUI.navigateToUrl('http://localhost:3000/dolibarr/projet/index.php?mainmenu=project&leftmenu=')
+
+WebUI.comment('Vérification et Selection du bouton modifier')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A2/Page_Projets/a_PJ2102-0001'), 0)
 
@@ -35,6 +39,8 @@ WebUI.click(findTestObject('Object Repository/PS-001-A2/Page_PJ2102-0001 - Test 
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A2/Page_PJ2102-0001 - Test cration projet/input_Libell projet_title'), 
     0)
+
+WebUI.comment('Modification du projet et validation')
 
 WebUI.click(findTestObject('Object Repository/PS-001-A2/Page_PJ2102-0001 - Test cration projet/input_Libell projet_title'), 
     FailureHandling.STOP_ON_FAILURE)

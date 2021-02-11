@@ -16,25 +16,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A1/Page_Accueil - Dolibarr 1300/span_Projets'), 0)
+WebUI.click(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'))
 
-WebUI.click(findTestObject('Object Repository/PS-001-A1/Page_Accueil - Dolibarr 1300/span_Projets'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0, FailureHandling.OPTIONAL)
 
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/projet/index.php?mainmenu=project&leftmenu=')
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PS-001-A1/Page_Projets/a_Liste'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 0, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Object Repository/PS-001-A1/Page_Projets/a_Liste'))
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Object Repository/PS-001-A1/Page_Projets/span_PJ2102-0001_fas fa-sitemap infobox-pro_024f19'))
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:3000/dolibarr/projet/card.php?id=4&save_lastsearch_values=1')
-
-WebUI.click(findTestObject('Page_PJ2102-0001 - Test cration projet/a_Supprimer'))
-
-WebUI.click(findTestObject('Page_PJ2102-0001 - Test cration projet/button_Oui'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), FailureHandling.OPTIONAL)
 

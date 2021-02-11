@@ -4,7 +4,17 @@
    <name>span_Supprimer</name>
    <tag></tag>
    <elementGuidId>8cba4ed2-5e4f-44cb-9910-1238f130c67f</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='action-delete']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'action-delete' and (text() = 'Supprimer' or . = 'Supprimer')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

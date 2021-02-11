@@ -16,39 +16,40 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), 0)
+WebUI.click(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'))
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_Configuration'))
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'), 0)
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_Configuration'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'))
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'), 0, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'))
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/a_SocitOrganisation'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/tr_NomEnseigneRaison sociale'))
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Renseignez votre société')
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/tr_NomEnseigneRaison sociale'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 0)
+WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Renseignez votre société', 
+    FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/span_(US)'), 0)
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_(US)'))
+WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/span_(US)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 0)
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/span_(US)'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_Etats-Unis (US)'), 0, FailureHandling.OPTIONAL)
 
-WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save'))
+WebUI.scrollToElement(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 0)
+WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_Description_save'), FailureHandling.OPTIONAL)
 
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 0, FailureHandling.OPTIONAL)
 

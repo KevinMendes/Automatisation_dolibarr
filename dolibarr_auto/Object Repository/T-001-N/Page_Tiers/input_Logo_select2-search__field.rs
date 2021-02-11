@@ -6,12 +6,12 @@
    <elementGuidId>99e96828-c5e4-4af0-91c8-d1f3a0c38dac</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@type = 'search']</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/span/span/span[1]/input</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'search']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

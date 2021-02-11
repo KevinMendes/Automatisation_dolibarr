@@ -18,29 +18,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0)
+WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_Accueil - Dolibarr 1300/span_Tiers'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'))
+WebUI.click(findTestObject('T-001-A1/Page_Accueil - Dolibarr 1300/span_Tiers'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 0)
+WebUI.verifyTextPresent('April', false, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'))
+WebUI.click(findTestObject('T-001-A1/Page_Tiers/a_APRIL'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0)
+WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_APRIL - Fiche/span_Supprimer'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'))
+WebUI.click(findTestObject('T-001-A1/Page_APRIL - Fiche/span_Supprimer'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'), 0)
+WebUI.verifyElementPresent(findTestObject('T-001-A1/Page_APRIL - Fiche/button_Oui'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (FACTURATION)'))
+WebUI.click(findTestObject('T-001-A1/Page_APRIL - Fiche/button_Oui'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'), 0)
-
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (SERVICE)'))
-
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'), 0)
-
-WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (PROJET)'))
-
-WebUI.closeBrowser()
+WebUI.verifyTextNotPresent('April', false, FailureHandling.OPTIONAL)
 
