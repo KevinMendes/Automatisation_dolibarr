@@ -10,23 +10,29 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>4187a461-28b5-4679-bbf2-0c0176a12f06</testSuiteGuid>
+   <testSuiteGuid>215c6d3e-ca2e-4ab6-b850-16f0937aaa1f</testSuiteGuid>
    <testCaseLink>
-      <guid>70659c5c-7f73-47d6-9331-166ab67db0e1</guid>
+      <guid>32703cd5-b9d6-4e54-995b-c251068344ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TIERS/T-001-N</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c32883ef-9814-4689-a7d0-bba25f78e2fe</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TIERS/T-001-A2</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5a1bfc95-0f76-4666-af55-4410e2695858</guid>
+      <guid>40503e32-1171-4bb7-89cd-a7f8453c2426</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TIERS/T-004-N</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a2b6b234-29cb-40f1-aead-04d1e6f00171</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TIERS/T-001-E</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1d16c696-89dc-4842-899b-663c9fe49adf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TIERS/T-001-A2</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

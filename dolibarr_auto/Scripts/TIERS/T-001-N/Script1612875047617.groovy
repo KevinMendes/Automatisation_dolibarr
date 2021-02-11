@@ -38,7 +38,5 @@ WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__fie
 
 WebUI.click(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Logo_create'))
 
-WebUI.verifyElementPresent(findTestObject('T-001-N/Page_April/div_April Etats-Unis'), 5)
-
 WebUI.verifyElementPresent(findTestObject('T-001-N/Page_April/td_Prospect  Client'), 5)
 
