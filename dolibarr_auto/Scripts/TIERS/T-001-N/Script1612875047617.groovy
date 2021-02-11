@@ -29,11 +29,12 @@ WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Nouveau tiers 
 
 WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/input_Logo_create'), 5)
 
-WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), 'April')
+'nom du tiers'
+WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), nomTiers)
 
 WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
 
-WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), 'Client')
+WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), clientProspect)
 
 WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
 
