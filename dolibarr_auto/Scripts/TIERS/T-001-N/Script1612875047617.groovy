@@ -32,7 +32,7 @@ WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du 
 WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
 
 'client ou prospect'
-WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), clientProspect)
+WebUI.setText(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), 'Client')
 
 WebUI.sendKeys(findTestObject('T-001-N/Page_Tiers/input_Logo_select2-search__field'), Keys.chord(Keys.ENTER))
 
