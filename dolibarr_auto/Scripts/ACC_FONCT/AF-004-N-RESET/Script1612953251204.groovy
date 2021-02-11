@@ -32,8 +32,7 @@ WebUI.click(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison 
 
 WebUI.click(findTestObject('AF-004-N/Page_Configuration/tr_NomEnseigneRaison sociale'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), 'Renseignez votre société', 
-    FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('AF-004-N/Page_Configuration/input_NomEnseigneRaison sociale_nom'), nomEnseigneDefaut, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Configuration/span_France (FR)'), 0, FailureHandling.OPTIONAL)
 
