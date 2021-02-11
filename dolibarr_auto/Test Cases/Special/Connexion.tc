@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>Password</name>
    </variable>
+   <variable>
+      <defaultValue>'http://localhost:3000/dolibarr\n'</defaultValue>
+      <description></description>
+      <id>7ec4ae18-d0e0-4d6d-ba8f-f1a353ea92dd</id>
+      <masked>false</masked>
+      <name>URL</name>
+   </variable>
 </TestCaseEntity>
