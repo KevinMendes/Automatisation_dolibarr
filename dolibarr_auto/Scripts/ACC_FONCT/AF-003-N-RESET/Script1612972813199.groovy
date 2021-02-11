@@ -16,19 +16,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), 0)
+WebUI.verifyElementPresent(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), 1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'))
+WebUI.click(findTestObject('AF-004-N/Page_Accueil - Dolibarr 1300/span_Accueil'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 0, FailureHandling.OPTIONAL)
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), 1, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_Configuration'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 0, FailureHandling.OPTIONAL)
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), 1, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/a_ModulesApplications'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), 1, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('AF-003-N/Page_Configuration/span_Gestion des tiers (TIERS)'), FailureHandling.OPTIONAL)
 

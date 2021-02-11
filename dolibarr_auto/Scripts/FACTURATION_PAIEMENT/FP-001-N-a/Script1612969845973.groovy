@@ -16,8 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Special/Connexion'), [('Login') : 'admin', ('Password') : 'pass'], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('Object Repository/FP-001-N-a/Page_Accueil - Dolibarr 1300/span_Facturation  Paiement'))
 
 WebUI.click(findTestObject('Object Repository/FP-001-N-a/Page_Espace facturation et paiement/a_Nouvelle facture'))
