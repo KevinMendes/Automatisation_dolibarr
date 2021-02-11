@@ -3,6 +3,9 @@
    <description></description>
    <name>PS-002-N</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Selection Onglet Service
+Selection nouveau service
+Ajout data Ref, Lib, Durée et Prix ainsi que les selections  Vente Achat Durée HTTTC
+Validation bouton créer et vérification</comment>
    <testCaseGuid>57ef3308-a558-461d-988f-c42caa205f17</testCaseGuid>
 </TestCaseEntity>

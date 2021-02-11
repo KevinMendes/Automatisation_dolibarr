@@ -16,7 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 WebUI.comment('Selection Onglet Service')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PS-002-N/Page_Accueil - Dolibarr 1300/span_Services'), 0)
