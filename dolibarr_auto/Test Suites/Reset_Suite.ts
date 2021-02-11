@@ -9,7 +9,6 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>b9ed654b-5bad-48f6-9ffa-3e0571f7f1ce</testSuiteGuid>
    <testCaseLink>
       <guid>6429ca33-fde2-4b71-880e-34a61f4b4804</guid>
@@ -34,6 +33,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ACC_FONCT/AF-004-N-RESET</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>720fa196-d9e7-4bf4-8fd3-d3ebc62336ba</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>f313619c-11b8-4f1a-b4d3-63fdbc88b349</guid>

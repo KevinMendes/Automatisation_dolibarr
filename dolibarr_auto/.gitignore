@@ -30,4 +30,5 @@ settings/internal/com.kms.katalon.integration.jira.properties
 /bin/
 /.classpath
 /.project
-
+.classpath
+.project

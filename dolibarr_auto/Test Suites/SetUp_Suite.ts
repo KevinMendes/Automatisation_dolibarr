@@ -34,6 +34,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ACC_FONCT/AF-004-N</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>84ddb611-ee2a-4308-bd9f-b855b64c75f3</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>0bdcb9f4-38aa-403d-bff7-018a96e90e40</guid>
