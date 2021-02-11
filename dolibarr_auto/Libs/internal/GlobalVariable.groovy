@@ -10,12 +10,14 @@ import com.kms.katalon.core.main.TestCaseMain
 public class GlobalVariable {
      
     /**
-     * <p>Profile global : login for superuser</p>
+     * <p>Profile global : login for superuser
+Profile prod : login for superuser</p>
      */
     public static Object Login
      
     /**
-     * <p>Profile global : Password for global user</p>
+     * <p>Profile global : Password for global user
+Profile prod : Password for global user</p>
      */
     public static Object Password
      

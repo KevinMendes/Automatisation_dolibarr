@@ -6,8 +6,8 @@
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
-   <pageLoadTimeout>30</pageLoadTimeout>
-   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <pageLoadTimeout>5</pageLoadTimeout>
+   <pageLoadTimeoutDefault>false</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>d0623e17-ca21-4928-b6c0-73a79ab60c52</testSuiteGuid>
@@ -60,21 +60,9 @@
       <testCaseId>Test Cases/PROJET_SERVICE/PS-001-N</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>546d1b12-1e85-4bfb-b5d1-0f0561d5cd57</guid>
+      <guid>17939a23-dcea-489f-8563-7e87443274ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TIERS/T-001-N</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0325602b-8118-4faa-9deb-7fe0902eb35a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Special/Deconnexion</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e70ae058-8495-4823-a900-8369fb68c25f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Special/CloseBrowser</testCaseId>
+      <testCaseId>Test Cases/TIERS/T-001-N-k</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

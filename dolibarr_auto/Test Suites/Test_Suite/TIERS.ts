@@ -24,12 +24,6 @@
       <testCaseId>Test Cases/TIERS/T-004-N</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a2b6b234-29cb-40f1-aead-04d1e6f00171</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TIERS/T-001-E</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1d16c696-89dc-4842-899b-663c9fe49adf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

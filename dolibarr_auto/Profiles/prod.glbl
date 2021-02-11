@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>prod</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>login for superuser</description>
+      <initValue>'admin'</initValue>
+      <name>Login</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password for global user</description>
+      <initValue>'pass'</initValue>
+      <name>Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://testing.bzh/dolibarr_Recette/index.php'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
