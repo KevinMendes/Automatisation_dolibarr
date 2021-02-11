@@ -29,6 +29,7 @@ WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/div_Nouveau tiers 
 
 WebUI.verifyElementPresent(findTestObject('T-001-N/Page_Tiers/input_Logo_create'), 5)
 
+'nom du tiers'
 WebUI.setText(findTestObject('Object Repository/T-001-N/Page_Tiers/input_Nom du tiers_name'), nomTiers)
 
 WebUI.click(findTestObject('T-001-N/Page_Tiers/span_'))
