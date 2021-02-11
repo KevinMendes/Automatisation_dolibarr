@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1fc6f876-6356-4c15-b794-94db6a93e001</testCaseGuid>
+   <variable>
+      <defaultValue>'ref'</defaultValue>
+      <description></description>
+      <id>a22bc0d6-46ab-479f-a6e6-2ac0ea0973e1</id>
+      <masked>false</masked>
+      <name>selectionService</name>
+   </variable>
 </TestCaseEntity>

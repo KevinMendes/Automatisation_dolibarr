@@ -25,7 +25,7 @@ WebUI.waitForElementVisible(findTestObject('FP-001-N-b/Page_Facture client - Fic
 
 WebUI.click(findTestObject('FP-001-N-b/Page_Facture client - Fiche/input_Dolibarr 1300_select2-search__field'))
 
-WebUI.setText(findTestObject('FP-001-N-b/Page_Facture client - Fiche/input_Dolibarr 1300_select2-search__field'), 'ref')
+WebUI.setText(findTestObject('FP-001-N-b/Page_Facture client - Fiche/input_Dolibarr 1300_select2-search__field'), selectionService)
 
 WebUI.sendKeys(findTestObject('FP-001-N-b/Page_Facture client - Fiche/input_Dolibarr 1300_select2-search__field'), Keys.chord(
         Keys.ENTER))

@@ -24,7 +24,7 @@ WebUI.comment('ajouter tiers')
 
 WebUI.click(findTestObject('FP-001-N-a/Page_Facture client - Fiche/span_Slectionner un tiers'))
 
-WebUI.setText(findTestObject('FP-001-N-a/Page_Facture client - Fiche/input__select2-search__field'), 'Pre')
+WebUI.setText(findTestObject('FP-001-N-a/Page_Facture client - Fiche/input__select2-search__field'), selectionTiers)
 
 WebUI.sendKeys(findTestObject('FP-001-N-a/Page_Facture client - Fiche/input__select2-search__field'), Keys.chord(Keys.ENTER))
 

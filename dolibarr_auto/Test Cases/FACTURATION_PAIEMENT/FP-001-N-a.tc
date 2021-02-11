@@ -3,6 +3,14 @@
    <description>Création compte bancaire</description>
    <name>FP-001-N-a</name>
    <tag></tag>
-   <comment></comment>
+   <comment>ajouter tiers
+selection date</comment>
    <testCaseGuid>bbf5e327-505c-48ea-9172-538d74663e84</testCaseGuid>
+   <variable>
+      <defaultValue>'Pre'</defaultValue>
+      <description></description>
+      <id>75affe59-3f8d-4147-8071-d689e1d07918</id>
+      <masked>false</masked>
+      <name>selectionTiers</name>
+   </variable>
 </TestCaseEntity>
