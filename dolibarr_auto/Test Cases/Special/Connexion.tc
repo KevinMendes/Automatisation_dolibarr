@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Connexion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aadd92f5-19b2-4d41-a702-172e338990e0</testCaseGuid>
+   <variable>
+      <defaultValue>'admin'</defaultValue>
+      <description></description>
+      <id>b79a2709-30b9-4fcd-b4f1-73f82f3bc8db</id>
+      <masked>false</masked>
+      <name>Login</name>
+   </variable>
+   <variable>
+      <defaultValue>'pass'</defaultValue>
+      <description></description>
+      <id>38bde506-0f09-4a80-a747-2257e49e7f1b</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>'http://localhost:3000/dolibarr\n'</defaultValue>
+      <description></description>
+      <id>7ec4ae18-d0e0-4d6d-ba8f-f1a353ea92dd</id>
+      <masked>false</masked>
+      <name>URL</name>
+   </variable>
+</TestCaseEntity>

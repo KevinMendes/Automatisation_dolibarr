@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Création société</description>
+   <name>AF-004-N</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7904385b-7959-43d4-9e6d-6e527c1e33ac</testCaseGuid>
+   <variable>
+      <defaultValue>'Testing.bzh'</defaultValue>
+      <description></description>
+      <id>84ddb611-ee2a-4308-bd9f-b855b64c75f3</id>
+      <masked>false</masked>
+      <name>nomEnseigne</name>
+   </variable>
+</TestCaseEntity>

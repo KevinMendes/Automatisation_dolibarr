@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Création société</description>
+   <name>AF-004-N-RESET</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9eb3d0db-4e9c-45c8-a012-b7ab818f9eee</testCaseGuid>
+   <variable>
+      <defaultValue>'Renseignez votre société'</defaultValue>
+      <description></description>
+      <id>720fa196-d9e7-4bf4-8fd3-d3ebc62336ba</id>
+      <masked>false</masked>
+      <name>nomEnseigneDefaut</name>
+   </variable>
+</TestCaseEntity>
